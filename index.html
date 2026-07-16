@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎁 Gift Calculator</h1>
+
+  <label>How close are you to me?</label>
+  <select id="close">
+    <option value="1">Stranger</option>
+    <option value="2">Friend</option>
+    <option value="3">Best Friend</option>
+    <option value="4">Family</option>
+  </select>
+
+  <label>How annoying am I?</label>
+  <select id="annoy">
+    <option value="1">Very Annoying</option>
+    <option value="2">Sometimes</option>
+    <option value="3">Not Really</option>
+    <option value="4">Perfect</option>
+  </select>
+
+  <label>Your Budget (KES)</label>
+  <input type="number" id="budget" placeholder="1000">
+
+  <button onclick="calculateGift()">Calculate</button>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
